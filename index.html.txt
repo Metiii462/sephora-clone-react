@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephora Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1?? Navbar -->
+    <header>
+        <div class="logo">SephoraClone</div>
+        <nav>
+            <ul>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Fragrance</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <input type="text" placeholder="Search...">
+            <i class="fa fa-user"></i>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <!-- 2?? Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Beauty, Your Way</h1>
+            <p>Explore the latest makeup, skincare, and fragrance trends.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <!-- 3?? Featured Products Section -->
+    <!-- <-- This is where your next HTML code for product cards will go --> -->
+
+</body>
+</html>
