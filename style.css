@@ -1,64 +1,108 @@
-/* Navbar */
-header {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.promo-bar {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 15px 50px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
 .logo {
     font-size: 24px;
-    font-weight: bold;
-    color: #000;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
+.search-bar {
+    width: 40%;
+    position: relative;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-}
-
-nav ul li a:hover {
-    color: #ff3366; /* Sephora pink */
-}
-
-.nav-icons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.nav-icons input {
-    padding: 5px 10px;
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
     border-radius: 20px;
     border: 1px solid #ccc;
 }
 
-.nav-icons i {
-    font-size: 20px;
+.search-bar i {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+.hero {
+    height: 400px;
+    background-color: #f6f6f6; /* Replace with a beauty image later */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://unsplash.com');
+    background-size: cover;
+    color: white;
+}
+
+.shop-btn {
+    background: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    margin-top: 20px;
     cursor: pointer;
 }
 
-/* Responsive Navbar */
-@media(max-width: 768px){
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
+.products {
+    padding: 50px;
+}
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product-card {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.product-card:hover {
+    border: 1px solid #eee;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.brand { font-weight: bold; font-size: 14px; }
+.name { color: #555; font-size: 13px; margin: 5px 0; }
+.price { font-weight: bold; }
+
+.add-cart {
+    background: #e50012; /* Sephora Red */
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
 }
