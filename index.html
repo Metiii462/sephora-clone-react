@@ -1,67 +1,26 @@
-<!DOCTYPE html>
+!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sephora Clone | Portfolio Project</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fonts and Icons -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="https://cloudflare.com">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: Set the document title to the name of your application -->
+    <title>Lovable App</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
 
-    <!-- Top Promo Bar -->
-    <div class="promo-bar">
-        FREE Standard Shipping on all orders. **Code: FREESHIP**
-    </div>
+    <!-- TODO: Update og:title to match your application name -->
+    <meta property="og:title" content="Lovable App" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">SEPHORA</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for products, brands...">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="nav-icons">
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-basket-shopping"></i>
-        </div>
-    </nav>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>BEAUTY INSIDER</h1>
-            <p>Join for free and get 10% off your first purchase.</p>
-            <button class="shop-btn">Shop Now</button>
-        </div>
-    </header>
-
-    <!-- Product Grid Section -->
-    <section class="products">
-        <h2>New Arrivals</h2>
-        <div class="grid" id="product-grid">
-            <!-- Product Card 1 -->
-            <div class="product-card">
-                <img src="https://placeholder.com" alt="Product">
-                <p class="brand">FENTY BEAUTY</p>
-                <p class="name">Gloss Bomb Universal Lip Luminizer</p>
-                <p class="price">$21.00</p>
-                <button class="add-cart">Add to Basket</button>
-            </div>
-            <!-- Product Card 2 -->
-            <div class="product-card">
-                <img src="https://placeholder.com" alt="Product">
-                <p class="brand">GLOSSIER</p>
-                <p class="name">Cloud Paint Gel-Cream Blush</p>
-                <p class="price">$20.00</p>
-                <button class="add-cart">Add to Basket</button>
-            </div>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
