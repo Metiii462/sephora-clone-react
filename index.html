@@ -3,41 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sephora Clone</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Sephora Clone | Portfolio Project</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts and Icons -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
-    <!-- 1?? Navbar -->
-    <header>
-        <div class="logo">SephoraClone</div>
-        <nav>
-            <ul>
-                <li><a href="#">Makeup</a></li>
-                <li><a href="#">Skincare</a></li>
-                <li><a href="#">Fragrance</a></li>
-                <li><a href="#">Sale</a></li>
-            </ul>
-        </nav>
+    <!-- Top Promo Bar -->
+    <div class="promo-bar">
+        FREE Standard Shipping on all orders. **Code: FREESHIP**
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SEPHORA</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
         <div class="nav-icons">
-            <input type="text" placeholder="Search...">
-            <i class="fa fa-user"></i>
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>BEAUTY INSIDER</h1>
+            <p>Join for free and get 10% off your first purchase.</p>
+            <button class="shop-btn">Shop Now</button>
         </div>
     </header>
 
-    <!-- 2?? Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Beauty, Your Way</h1>
-            <p>Explore the latest makeup, skincare, and fragrance trends.</p>
-            <button>Shop Now</button>
+    <!-- Product Grid Section -->
+    <section class="products">
+        <h2>New Arrivals</h2>
+        <div class="grid" id="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="https://placeholder.com" alt="Product">
+                <p class="brand">FENTY BEAUTY</p>
+                <p class="name">Gloss Bomb Universal Lip Luminizer</p>
+                <p class="price">$21.00</p>
+                <button class="add-cart">Add to Basket</button>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="https://placeholder.com" alt="Product">
+                <p class="brand">GLOSSIER</p>
+                <p class="name">Cloud Paint Gel-Cream Blush</p>
+                <p class="price">$20.00</p>
+                <button class="add-cart">Add to Basket</button>
+            </div>
         </div>
     </section>
 
-    <!-- 3?? Featured Products Section -->
-    <!-- <-- This is where your next HTML code for product cards will go --> -->
-
+    <script src="script.js"></script>
 </body>
 </html>
