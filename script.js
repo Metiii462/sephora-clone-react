@@ -44,4 +44,3 @@ addButtons.forEach((button) => {
         addToCart(productName);
     });
 });
-
